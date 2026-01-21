@@ -1,23 +1,23 @@
-// const friends =['Peter', 'Parker','Kirby'];
-// console.log(friends[0]);
-// console.log(friends.length)
-// friends[2] = 'Ben';
+const friends =['Peter', 'Parker','Kirby'];
+console.log(friends[0]);
+console.log(friends.length)
+friends[2] = 'Ben';
 
-// const firstName = 'Trevor';
-// const lastName = 'Muturi';
-// const trevor = [firstName, lastName, 2025 - 2002, 'student', friends];
-// console.log(trevor);
+const firstName = 'Trevor';
+const lastName = 'Muturi';
+const trevor = [firstName, lastName, 2025 - 2002, 'student', friends];
+console.log(trevor);
 
-// friends.push('Gwen');
-// friends.unshift("Max");
+friends.push('Gwen');
+friends.unshift("Max");
 
-// console.log(friends);
+console.log(friends);
 
-// friends.pop();
-// friends.shift();
-// console.log(friends.indexOf('Parker'));
-// console.log(friends.includes('Parker'));
-// console.log(friends);
+friends.pop();
+friends.shift();
+console.log(friends.indexOf('Parker'));
+console.log(friends.includes('Parker'));
+console.log(friends);
 
 // Steven wants you to improve his tip calculator, using the same rules as before — tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
 
