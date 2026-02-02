@@ -50,9 +50,9 @@ document.querySelector('.check').addEventListener('click', function () {
     if (score > 1) {
       // document.querySelector('.message').textContent =
       //   guess > secretNumber ? '📈Too High!!!' : '💀You lost the game!';
-      displayMessage(
-        guess > secretNumber ? '📈Too High!!!' : '💀You lost the game!',
-      );
+      score--;
+      document.querySelector('.score').textContent = score;
+      displayMessage(guess > secretNumber ? '📈Too High!!!' : '📉Too Low!!!');
     } else {
       displayMessage('💀You lost the game!');
       document.querySelector('.score').textContent = 0;
