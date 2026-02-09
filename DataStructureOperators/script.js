@@ -41,4 +41,25 @@ const restaurant = {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
 };
-console.log(restaurant.order(2, 0));
+//we can now simply destructure this
+// restaurant.order(2, 0);
+const [starter, main] = restaurant.order(2, 0); //receive 2 return values from a function
+console.log(starter, main);
+
+//destructuring nested arrays
+// const nested = [2, 4, [5, 6]];
+// const [i, , j] = nested;
+// console.log(i, j);
+
+//what if we wanted all the individual values
+// const nested = [2, 4, [5, 6]];
+// const [i, , [j, k]] = nested;
+// console.log(i, j, k);
+
+//default values
+// const [p,q,r] = [8,9];
+// console.log(p,q,r); // we will get undefined as the third element
+
+const [p = 1, q = 1, r = 1] = [8, 9];
+console.log(p, q, r);
+
